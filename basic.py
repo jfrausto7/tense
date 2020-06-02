@@ -8,7 +8,10 @@ tf.compat.v1.disable_eager_execution()  # disable eager execution
 a = 2
 b = 3
 c = tf.add(a, b, name='Add')
+l = tf.constant([2,3,5])
+print(l.shape)
 print(c)
+
 
 sess = tf.compat.v1.Session()
 print(sess.run(c))
